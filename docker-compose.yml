@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  python-backend:
+    build: .
+    ports:
+        - "5000:8080"
+    #volumes:
+    #  - .:/app

@@ -17,6 +17,7 @@ CORS(app, resources={r'/*': {'origins': '*'}})
 
 
 # sanity check route
+# Harjoittelua varten, kun katsoin tutoriaaleja :D
 @app.route('/ping', methods=['GET'])
 def ping_pong():
     return jsonify('pong!')
@@ -72,4 +73,4 @@ def sentimental_analysis():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8080)
